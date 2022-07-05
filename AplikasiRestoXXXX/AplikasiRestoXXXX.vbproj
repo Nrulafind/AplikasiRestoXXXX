@@ -74,43 +74,51 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\ClsCtlKasir.vb" />
     <Compile Include="Controls\ClsCtlKategori.vb" />
+    <Compile Include="Controls\ClsCtlMenu.vb" />
+    <Compile Include="Controls\ClsCtlPenjualan.vb" />
+    <Compile Include="Controls\InfProsess.vb" />
+    <Compile Include="Entity\ClsEntDetailJual.vb" />
+    <Compile Include="Entity\ClsEntKasir.vb" />
     <Compile Include="Entity\ClsEntKategori.vb" />
-    <Compile Include="FormCariMenu.Designer.vb">
+    <Compile Include="Entity\ClsEntMenu.vb" />
+    <Compile Include="Entity\ClsEntPenjualan.vb" />
+    <Compile Include="Form\FormCariMenu.Designer.vb">
       <DependentUpon>FormCariMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormCariMenu.vb">
+    <Compile Include="Form\FormCariMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.vb">
+    <Compile Include="Form\FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.Designer.vb">
+    <Compile Include="Form\FormLogin.Designer.vb">
       <DependentUpon>FormLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormKasir.Designer.vb">
+    <Compile Include="Form\FormKasir.Designer.vb">
       <DependentUpon>FormKasir.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormKasir.vb">
+    <Compile Include="Form\FormKasir.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormKategori.Designer.vb">
+    <Compile Include="Form\FormKategori.Designer.vb">
       <DependentUpon>FormKategori.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormKategori.vb">
+    <Compile Include="Form\FormKategori.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMenu.Designer.vb">
+    <Compile Include="Form\FormMenu.Designer.vb">
       <DependentUpon>FormMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormMenu.vb">
+    <Compile Include="Form\FormMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPenjualan.Designer.vb">
+    <Compile Include="Form\FormPenjualan.Designer.vb">
       <DependentUpon>FormPenjualan.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormPenjualan.vb">
+    <Compile Include="Form\FormPenjualan.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Global\ModKoneksiDB.vb" />
@@ -132,22 +140,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormCariMenu.resx">
+    <EmbeddedResource Include="Form\FormCariMenu.resx">
       <DependentUpon>FormCariMenu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLogin.resx">
+    <EmbeddedResource Include="Form\FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormKasir.resx">
+    <EmbeddedResource Include="Form\FormKasir.resx">
       <DependentUpon>FormKasir.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormKategori.resx">
+    <EmbeddedResource Include="Form\FormKategori.resx">
       <DependentUpon>FormKategori.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMenu.resx">
+    <EmbeddedResource Include="Form\FormMenu.resx">
       <DependentUpon>FormMenu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPenjualan.resx">
+    <EmbeddedResource Include="Form\FormPenjualan.resx">
       <DependentUpon>FormPenjualan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -187,8 +195,6 @@
   <ItemGroup>
     <None Include="Resources\icoCari.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Form\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

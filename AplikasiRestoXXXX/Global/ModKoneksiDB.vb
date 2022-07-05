@@ -6,7 +6,7 @@ Module ModKoneksiDB
     Public DTS As New DataSet
     Public DTT As New DataTable
     Public DTGrid As New DataTable
-    Public MyDB = ""
+    Public MyDB = "Data Source=NRULAA;Initial Catalog=DBResto_0175;Integrated Security=True"
     Public Koneksi As New SqlConnection(MyDB)
     Public Function BUKAKONEKSI() As SqlConnection
         Try
